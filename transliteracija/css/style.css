@@ -1,0 +1,355 @@
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+
+version:   1.0
+date:      02/05/16
+author:    [Miladin Popovic]
+email:     [mil.ppvc@gmail.com]
+website:   [nidalim.github.io]
+version history: [location of file]
+@import url("typography.css");
+
+using this on many different projects.
+
+/* Remove padding and margin */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+    background: white;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+body {
+    font: 62.5%/1.5 'Playfair Display', Tahoma, Verdana, serif;
+    background: white;
+    color: #000000;
+    text-align: center;
+}
+
+#wrapper {
+    max-width: 1200px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#header {
+    background: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border: 1px solid black;
+    box-shadow: 0px 4px 0px #eaeaea;
+    border-radius: 4px;
+    margin: 30px 10px 10px 10px;
+}
+
+form#search {
+    display: inline-block;
+    padding: 10px;
+}
+
+input[type="search"] {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#header ul{
+    display: inline-block;
+}
+
+#header ul li {
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 20px 30px;
+    display: block;
+}
+
+#header ul li a:hover{
+    color: #FFD800;
+}
+
+#main {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2b7b2+0,3f4343+100 */
+    background: #ffffff;
+    /* Old browsers
+    background: -moz-radial-gradient(ellipse at center, rgb(83, 87, 87) 0%, rgba(63, 67, 67, 1) 100%);
+    /* FF3.6-15
+    background: -webkit-radial-gradient(ellipse at center, rgb(83, 87, 87) 0%, rgba(63, 67, 67, 1) 100%);
+    /* Chrome10-25,Safari5.1-6
+    background: radial-gradient(ellipse at center, rgb(83, 87, 87) 0%, rgba(63, 67, 67, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b2b7b2', endColorstr='#3f4343', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    padding: 0px;
+    margin-top: 4px;
+}
+
+#footer {
+    text-align: center;
+    padding: 30px;
+}
+
+#footer ul li {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 10px;
+    display: block;
+}
+
+#footer ul li a:hover{
+    background: #aaafaa;
+}
+
+input.text {
+    padding: 3px;
+    border: 1px solid #999999;
+}
+
+#footext{
+    padding: 0px;
+    display: block;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #6b6b6b;
+}
+
+#rights{
+    padding: 20px 0px 0px 0px;
+    display: block;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #131313;
+    text-align: justify;
+}
+button{
+    padding: 20px;
+    background: #ff1159;
+    border-radius: 4px;
+    font-size: 1.5em;
+    box-shadow: 0px 4px 0px #b73141;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border:1px solid black;
+}
+
+button:focus {
+    outline: none;
+}
+
+button#prvo {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#prvo1 {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#prvo2 {
+    background: white;
+    color: red;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#prvo3 {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#drugo {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#drugo1 {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+button#drugo3 {
+    background: white;
+    color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+
+#uputstvo {
+    background: #FFD800;
+    text-align: justify;
+    padding: 24px 30px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    border: 1px solid black;
+    box-shadow: 0px 4px 0px #d8ba2d;
+    border-radius: 4px;
+}
+
+/* Tables
+-----------------------------------------------------------------------------*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+    font-weight: normal;
+}
