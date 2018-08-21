@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <title>Agregator | Sve vesti na jednom mestu</title>
+    <!-- Custom your style -->
+    <link type="text/css" rel="stylesheet" href="src/htmlfromrss.css" />
+    <!-- Demo -->
+    <style>
+    @media only screen and (min-width: 960px) and (max-width: 1045px) {
+        #first {
+            width: calc(50% - 20px);
+        }
+        #second {
+            width: calc(50% - 10px);
+        }
+        #third {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #fourth {
+            width: calc(50% - 10px);
+        }
+        #fifth {
+            width: calc(50% - 20px);
+        }
+        #sixth {
+            width: calc(50% - 10px);
+        }
+        #seventh {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #eight {
+            width: calc(50% - 10px);
+            margin: 10px 10px 10px 10px;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        #first {
+            width: calc(50% - 20px);
+        }
+        #second {
+            width: calc(50% - 10px);
+        }
+        #third {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #fourth {
+            width: calc(50% - 10px);
+        }
+        #fifth {
+            width: calc(50% - 20px);
+        }
+        #sixth {
+            width: calc(50% - 10px);
+        }
+        #seventh {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #eight {
+            width: calc(50% - 10px);
+            margin: 10px 10px 10px 10px;
+        }
+    }
+    
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        #first {
+            width: calc(50% - 20px);
+        }
+        #second {
+            width: calc(50% - 10px);
+        }
+        #third {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #fourth {
+            width: calc(50% - 10px);
+        }
+        #fifth {
+            width: calc(50% - 20px);
+        }
+        #sixth {
+            width: calc(50% - 10px);
+        }
+        #seventh {
+            width: calc(50% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #eight {
+            width: calc(50% - 10px);
+            margin: 10px 10px 10px 10px;
+        }
+    }
+    
+    @media screen and (max-width:479px) {
+        #first {
+            width: calc(100% - 20px);
+        }
+        #second {
+            width: calc(100% - 20px);
+            margin: 10px;
+        }
+        #third {
+            width: calc(100% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #fourth {
+            width: calc(100% - 20px);
+        }
+        #fifth {
+            width: calc(100% - 20px);
+        }
+        #sixth {
+            width: calc(100% - 20px);
+        }
+        #seventh {
+            width: calc(100% - 20px);
+            margin: 10px 0px 10px 10px;
+        }
+        #eight {
+            width: calc(100% - 20px);
+            margin: 10px;
+        }
+    }
+    </style>
+    <!-- Include jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Include htmlfromrss.js -->
+    <script src="src/htmlfromrss.js"></script>
+    <script src="src/main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <a href="#">agregator</a>
+            </div>
+            <ul id="navigation" style="display: none;>
+                <li><a href="index.html">1</a></li>
+                <li><a href="#sport">2</a></li>
+                <li><a href="#zabava">3</a></li>
+                <li><a href="#svet">4</a></li>
+            </ul>
+        </div>
+        <div id="first_part">
+            <!-- first part start-->
+            <h1 class="naslov"><span>AGREGATOR VESTI</span></h1>
+            <div id="first">
+                <div class="row">
+                    <div id="blic" class="vesti" data-htmlfromrss="http://www.blic.rs/rss/Vesti/Politika"></div>
+                </div>
+            </div>
+            <div id="second">
+                <div class="row">
+                    <div id="vijestiba" class="vesti" data-htmlfromrss="http://vijesti.ba/rss/svevijesti"></div>
+                </div>
+            </div>
+            <div id="third">
+                <div class="row">
+                    <div id="index" class="vesti" data-htmlfromrss="https://www.index.hr/rss"></div>
+                </div>
+            </div>
+            <div id="fourth">
+                <div class="row">
+                    <div id="sputnik" class="vesti" data-htmlfromrss="http://rs.sputniknews.com/export/rss2/archive/index.xml"></div>
+                </div>
+            </div>
+        </div>
+        <!-- first part end-->
+        <div id="sport">
+            <!-- second part start-->
+            <h1 class="naslov"></h1>
+            <div id="fifth">
+                <div class="row">
+                    <div id="rts" class="vesti" data-htmlfromrss="http://www.rts.rs/page/stories/sr/rss/9/Politika.html"></div>
+                </div>
+            </div>
+            <div id="sixth">
+                <div class="row">
+                    <div id="dalmatinskiportal" class="vesti" data-htmlfromrss="http://dalmatinskiportal.hr/sadrzaj/rss/vijesti.xml"></div>
+                </div>
+            </div>
+            <div id="seventh">
+                <div class="row">
+                    <div id="kurir" class="vesti" data-htmlfromrss="http://www.kurir.rs/rss/politika/"></div>
+                </div>
+            </div>
+            <div id="eight">
+                <div class="row">
+                    <div id="dnevnik" class="vesti" data-htmlfromrss="http://rss.dnevnik.hr/index.rss"></div>
+                </div>
+            </div>
+        </div>
+        <!-- second part end-->
+        <script>
+        // RSS number of news
+        $(document).ready(function() {
+            $(".vesti").htmlfromrss(
+                limit = 15
+            );
+        });
+        //Scroll CSS change
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 184) {
+                $("#header").addClass("change_header");
+                $("#logo").addClass("change_logo");
+                $("#navigation").addClass("change_nav");
+            } else {
+                $("#header").removeClass("change_header");
+                $("#logo").removeClass("change_logo");
+                $("#navigation").removeClass("change_nav");
+            }
+        });
+        </script>
+
+    </div>
+</body>
+
+</html>

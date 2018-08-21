@@ -1,0 +1,313 @@
+body {
+    font-family: monospace, Serif;
+    background: #EFEFEF;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.row {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.vesti {
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    width: 100%;
+}
+
+.vesti span {
+    color: grey;
+    font-weight: bold;
+}
+
+#blic span {
+    color: #C20001;
+}
+
+#b92 span {
+    color: #2E2873;
+}
+
+#kurir span {
+    color: #221F1F;
+}
+
+#index span {
+    color: #E00605;
+}
+
+#dnevnik span {
+    color: #9C0711;
+}
+
+#rts span {
+    color: #1E365A;
+}
+
+#sputnik span {
+    color: #F7961D;
+}
+
+#dalmatinskiportal span {
+    color: #E54D42;
+}
+
+#vijestiba span {
+    color: #0A4777;
+}
+
+#header {
+    font-family: monospace;
+    z-index: 1;
+    position: relative;
+    right: 0;
+    left: 0;
+    background: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 43, 43, 0.05);
+}
+
+.sport {
+    color: #A7DC52 !important;
+}
+.zabava {
+    color: #FF5B77 !important;
+}
+.svet {
+    color: #00B4FF !important;
+}
+
+#logo {
+    display: none;
+    background: url(../img/logo.png) no-repeat center;
+    padding: 30px;
+    background-size: 200px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+#logo a{
+    color: transparent;
+    color: rgba(0,0,0,0);
+    font-size: 6em;
+    line-height: 1;
+}
+
+#logo:hover {
+    background: url(../img/logo_hover.png) no-repeat center;
+    padding: 30px;
+    background-size: 500px;
+}
+
+#header ul li {
+    padding: 24px;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#header ul {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+    line-height: 1;
+}
+
+#header ul li a {
+    font-weight: bold;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+#header ul li a:hover {
+    color: #FFA71B;
+}
+
+.htmlfromrss {
+    color: #3A3A3A;
+    font-family: monospace;
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.htmlfromrss a {
+    color: #101010;
+}
+
+.htmlfromrss ul {
+    margin: 0;
+    padding: 0;
+}
+
+.htmlfromrss li {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    background: #fff;
+    display: inline-table;
+    margin: 0px 0px 10px 0px;
+    padding: 15px;
+    list-style-type: none;
+    box-shadow: 0px 0px 15px rgba(255, 43, 43, 0.05);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.htmlfromrss li:hover {
+    box-shadow: 0px 2px 20px rgba(103, 103, 103, 0.31);
+    background: rgb(255, 247, 234);
+    /*position: absolute;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;*/
+}
+
+.htmlfromrss li div {
+    clear: both
+}
+
+.htmlfromrss li .title a {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
+    text-decoration: none
+}
+
+.htmlfromrss li .date {
+    color: #23809E;
+}
+
+.htmlfromrss li .post img {
+    float: left;
+    margin: 5px 10px 5px 0px
+}
+
+#first{
+    margin:10px;
+    background:#F9F9F9;
+    width: calc(25% - 20px);
+    display: inline-block;
+    float: left;
+}
+
+#second{
+    margin:10px 10px 10px 0px;
+    width: calc(25% - 10px);
+    background:#F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#third{
+    margin: 10px 0px 10px 0px;
+    width: calc(25% - 0px);
+    background:#F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#fourth{
+    margin: 10px;
+    width: calc(25% - 20px);
+    background: #F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#fifth{
+    margin: 10px 0px 10px 10px;
+    width: calc(25% - 20px);
+    background: #F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#sixth{
+    margin: 10px;
+    width: calc(25% - 10px);
+    background:#F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#seventh{
+    margin: 10px 10px 10px 0px;
+    width: calc(25% - 10px);
+    background:#F9F9F9;
+    display: inline-block;
+    float: left;
+}
+#eight{
+    margin: 10px 10px 10px 0px;
+    width: calc(25% - 10px);
+    background:#F9F9F9;
+    display: inline-block;
+    float: left;
+}
+
+#first_part{
+    display: inline-table;
+}
+
+#sport{
+    display: inline-table;
+    margin-top: -15px;
+}
+
+#third_part{
+    display: inline-table;
+    margin-top: -15px;
+}
+
+#third_part .post{
+    display: none;
+}
+
+#third_part .date{
+    display: none;
+}
+
+.row img{
+    display: none;
+}
+
+#kurir br{
+    display: none;
+}
+
+.naslov{
+    background: white;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+}
+.change_header{
+    background: rgba(255, 255, 255, 0.95) !important;
+    position: fixed !important;
+}
+
+.change_logo{
+    padding: 0px !important;
+    background-size: 200px !important;
+    float: left;
+    background-position: left !important;
+}
+.change_nav{
+    float: right;
+    padding: 6px !important;
+    margin-top: 0 !important;
+}
+
