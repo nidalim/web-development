@@ -1,0 +1,15 @@
+<?php
+$this->title = "Obrisi";
+$this->headTitle($this->title);
+?>
+<p class="brisanje">Da li ste sigurni da želite da obrišete
+    '<?php echo $this->escape($this->album['brend']); ?>'
+    '<?php echo $this->escape($this->album['model']); ?>'?
+</p>
+<form class="forma_brisanje" action="<?php echo $this->url(array('action' => 'delete')); ?>" method="post">
+    <div>
+        <input type="hidden" name="id" value="<?php echo $this->satovi['id']; ?>" />
+        <input type="submit" name="del" value="Da" />
+        <input type="submit" name="del" value="Ne" />
+    </div>
+</form>

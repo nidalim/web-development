@@ -1,0 +1,107 @@
+<?php
+$this->title = "Satovi";
+$this->headTitle($this->title);
+?>
+<?php echo $this->layout()->content ?>
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
+    </div>
+</header>
+
+
+<section class="portfolio" id="portfolio">
+    <div class="container">
+
+
+        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+
+
+        <p class="dodaj"><a href="<?php
+echo $this->url(array('controller' => 'index',
+    'action' => 'add'));
+?>">Add new</a></p>
+        <div class="satovi">
+
+            <?php foreach ($this->satovi as $satovi) : ?>
+                <div class="sat" style="margin: 10px;">
+                    <div class="slika">                                              
+                        <img style="width: 100%;" src="<?php echo $this->baseUrl("/img/") . $this->escape($satovi->slika); ?>">
+                    </div>
+                    <td><?php echo $this->escape($satovi->brend); ?></td>
+                    <td><?php echo $this->escape($satovi->model); ?></td><hr>
+                    <td><?php echo $this->escape($satovi->cena); ?></td><hr>
+                    <td><?php echo $this->escape($satovi->opis); ?></td>
+
+                    <td>
+                        <a href="<?php
+                echo $this->url(array('controller' => 'index',
+                    'action' => 'edit', 'id' => $satovi->id));
+                ?>">Izmeni</a>
+                        <a href="<?php
+                    echo $this->url(array('controller' => 'index',
+                        'action' => 'delete', 'id' => $satovi->id));
+                ?>">Obriši</a>
+                    </td>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section class="bg-komentari text-white mb-0" id="komentari">
+    <div class="container">
+
+        <h2 class="text-center text-uppercase text-white">Comments</h2>
+
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+
+                <p class="lead">
+                    <a class="ostavi_komentar" href="<?php
+                echo $this->url(
+                        array(
+                    'controller' => 'contact',
+                    'action' => 'sign'
+                        ), 'default', true)
+                ?>">LEAVE COMMENT</a></p>
+<br />
+            <div>
+                <?php foreach ($this->entries as $entry): ?>
+                <div class="komentar">
+                    <p style="display: none;"><?php echo $this->escape($entry->email) ?></p>
+                    "<?php echo $this->escape($entry->comment) ?>"
+                    </div>
+                <?php endforeach ?>
+            </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+        <h2 class="text-center text-uppercase text-white">About Us</h2>
+
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
