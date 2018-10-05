@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script src="ajax.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		app.ajax('file.json', function(data, xmlhttp){
+			data = JSON.parse(data);
+			console.log(data.name);
+		}, function(error, xmlhttp){
+			console.log('Error:', error);
+		});
+	</script>
+
+</body>
+</html>
