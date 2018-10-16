@@ -1,17 +1,4 @@
-/*-----------------------------------------------------------------------------
-[client] Screen Stylesheet
 
-version:   1.0
-date:      02/05/16
-author:    [Miladin Popovic]
-email:     [mil.ppvc@gmail.com]
-website:   [nidalim.github.io]
-version history: [location of file]
-@import url("typography.css");
-
-using this on many different projects.
-
-/* Remove padding and margin */
 
 * {
     margin: 0;
